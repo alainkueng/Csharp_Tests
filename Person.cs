@@ -10,4 +10,8 @@ public class User
 {
     public string Name { get; set; }
     public string Email { get; set; }
+
+    public User CheckStatus(int i, int j){
+        return this;
+    }
 }

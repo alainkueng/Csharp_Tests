@@ -10,7 +10,7 @@ class Program
 {
     static void Main()
     {
-        LinqChallenge1.Run();
+        //LinqChallenge1.Run();
         LinqChallenge2.Run();
         var users = new List<User>
 {

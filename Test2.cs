@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Dumpify;
 
 public class Product2
 {
@@ -71,7 +72,7 @@ public static class LinqChallenge2
             new OrderItem2 { OrderItemId = 5, OrderId = 4, ProductId = 1, Quantity = 1 }
         };
 
-        var letsdoit = users2.Join(orders2, u=>u.UserId, p=>p.ProductId, (u, p) => (u.UserId, p.))
+        var letsdoit = users2.Join(orders2, u=>u.UserId, p=>p.OrderId, (u, p) => new {u, p}).Join(orderItems2, combined => combined.p.OrderId, item =>item.OrderId, (combined, item) =>new {combined,item,orderItems2}).Dump();
 
     }
 }

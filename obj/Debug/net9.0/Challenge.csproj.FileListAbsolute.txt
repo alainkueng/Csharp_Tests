@@ -17,3 +17,4 @@ c:\Coding\Challenge\bin\Debug\net9.0\Spectre.Console.dll
 c:\Coding\Challenge\obj\Debug\net9.0\Challenge.csproj.AssemblyReference.cache
 c:\Coding\Challenge\obj\Debug\net9.0\Challenge.csproj.Up2Date
 c:\Coding\Challenge\bin\Debug\net9.0\people.json
+C:\Coding\Challenge\obj\Debug\net9.0\Challenge.sourcelink.json
